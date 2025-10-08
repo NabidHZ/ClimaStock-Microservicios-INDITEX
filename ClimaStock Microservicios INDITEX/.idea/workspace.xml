@@ -4,14 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3782d82-53ad-4f84-b5cb-d22aae18f197" name="Changes" comment="puerto 8080 escuchando">
+    <list default="true" id="a3782d82-53ad-4f84-b5cb-d22aae18f197" name="Changes" comment="Sustitucion de plaication properties por Yalm">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -39,6 +46,9 @@
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="33eoraR3Zjk8OoiXV9jZp9FjWNZ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -103,7 +113,7 @@
       <workItem from="1759693699642" duration="656000" />
       <workItem from="1759772756848" duration="10000" />
       <workItem from="1759772987943" duration="690000" />
-      <workItem from="1759939701228" duration="910000" />
+      <workItem from="1759939701228" duration="4776000" />
     </task>
     <task id="LOCAL-00001" summary="platilla auth-service">
       <option name="closed" value="true" />
@@ -129,7 +139,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759693886676</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Sustitucion de plaication properties por Yalm">
+      <option name="closed" value="true" />
+      <created>1759940970503</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1759940970503</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,6 +157,7 @@
     <MESSAGE value="platilla auth-service" />
     <MESSAGE value="prueba" />
     <MESSAGE value="puerto 8080 escuchando" />
-    <option name="LAST_COMMIT_MESSAGE" value="puerto 8080 escuchando" />
+    <MESSAGE value="Sustitucion de plaication properties por Yalm" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sustitucion de plaication properties por Yalm" />
   </component>
 </project>
