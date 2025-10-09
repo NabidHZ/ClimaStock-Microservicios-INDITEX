@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3782d82-53ad-4f84-b5cb-d22aae18f197" name="Changes" comment="Jwt filtros">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/climastockmcs/authservice/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/climastockmcs/authservice/config/SecurityConfig.java" afterDir="false" />
-    </list>
+    <list default="true" id="a3782d82-53ad-4f84-b5cb-d22aae18f197" name="Changes" comment="Microservicio corriendo" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -115,7 +112,7 @@
       <workItem from="1759772756848" duration="10000" />
       <workItem from="1759772987943" duration="690000" />
       <workItem from="1759939701228" duration="9328000" />
-      <workItem from="1760015614535" duration="6362000" />
+      <workItem from="1760015614535" duration="6900000" />
     </task>
     <task id="LOCAL-00001" summary="platilla auth-service">
       <option name="closed" value="true" />
@@ -181,7 +178,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760023629585</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Microservicio corriendo">
+      <option name="closed" value="true" />
+      <created>1760025329039</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1760025329039</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,6 +200,7 @@
     <MESSAGE value="roles y usuarioa creados" />
     <MESSAGE value="repositprios creados" />
     <MESSAGE value="Jwt filtros" />
-    <option name="LAST_COMMIT_MESSAGE" value="Jwt filtros" />
+    <MESSAGE value="Microservicio corriendo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Microservicio corriendo" />
   </component>
 </project>
