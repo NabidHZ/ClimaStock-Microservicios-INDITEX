@@ -19,36 +19,42 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 @EnableWebSecurity //Habilita la seguridad web en la aplicación
 public class SecurityConfig {
 
-    @Autowired
+    @Autowired //Inyección de dependencia del filtro JWT
     private JwtFilter jwtFilter;
 
-    @Autowired
+    @Autowired //se usa para obtener la información del usuario (como nombre y roles) cuando se valida el token.
     private UserDetailsServiceImpl userDetailsService;
 
 
     //Bean que define el codificador de contraseñas utilizando BCrypt
     @Bean
     public PasswordEncoder passwordEncoder() {
-        return new BCryptPasswordEncoder();
+        return new BCryptPasswordEncoder(); //BCrypt es un algoritmo de hashing seguro para almacenar contraseñas.
     }
 
+    //Bean AuthenticationManager es quien comprueba usuario y contraseña cuando alguien hace login.
     @Bean
     public AuthenticationManager authenticationManager(AuthenticationConfiguration authConfig) throws Exception {
         return authConfig.getAuthenticationManager();
     }
 
+    //Bean que configura la cadena de filtros de seguridad
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http
-                .csrf(csrf -> csrf.disable())
-                .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/auth/**").permitAll()
-                        .anyRequest().authenticated()
+                .csrf(csrf -> csrf.disable()) //Desactiva la protección CSRF porque ya uso JWT
+                .authorizeHttpRequests(auth -> auth //Define qué rutas necesitan autenticación y cuáles no.
+                        .requestMatchers("/auth/**").permitAll() //Permite acceso sin autenticación a rutas que empiezan con /auth/
+                        .anyRequest().authenticated() //Cualquier otra ruta requiere autenticación
                 )
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS));
+                //Significa que no se guardará sesión en el servidor.
+               // En una app JWT, cada petición lleva su token,
+               //por eso no hace falta que el servidor recuerde quién eres (no hay “sesión”).
 
-        http.addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);
 
-        return http.build();
+        http.addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class); //Añade el filtro JWT antes del filtro de autenticación por defecto de Spring Security.
+
+        return http.build(); //Construye y devuelve la configuración de seguridad.
     }
 }
