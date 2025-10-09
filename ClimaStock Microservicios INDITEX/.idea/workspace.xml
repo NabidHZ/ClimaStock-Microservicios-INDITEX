@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3782d82-53ad-4f84-b5cb-d22aae18f197" name="Changes" comment="roles y usuarioa creados" />
+    <list default="true" id="a3782d82-53ad-4f84-b5cb-d22aae18f197" name="Changes" comment="repositprios creados">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/climastockmcs/authservice/repository/RolRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/climastockmcs/authservice/repository/RolRepository.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +18,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -110,7 +116,8 @@
       <workItem from="1759693699642" duration="656000" />
       <workItem from="1759772756848" duration="10000" />
       <workItem from="1759772987943" duration="690000" />
-      <workItem from="1759939701228" duration="5296000" />
+      <workItem from="1759939701228" duration="9328000" />
+      <workItem from="1760015614535" duration="4537000" />
     </task>
     <task id="LOCAL-00001" summary="platilla auth-service">
       <option name="closed" value="true" />
@@ -160,7 +167,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759955260514</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="repositprios creados">
+      <option name="closed" value="true" />
+      <created>1759955769220</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1759955769220</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,6 +187,7 @@
     <MESSAGE value="puerto 8080 escuchando" />
     <MESSAGE value="Sustitucion de plaication properties por Yalm" />
     <MESSAGE value="roles y usuarioa creados" />
-    <option name="LAST_COMMIT_MESSAGE" value="roles y usuarioa creados" />
+    <MESSAGE value="repositprios creados" />
+    <option name="LAST_COMMIT_MESSAGE" value="repositprios creados" />
   </component>
 </project>
