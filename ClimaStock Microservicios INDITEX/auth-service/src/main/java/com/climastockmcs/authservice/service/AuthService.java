@@ -1,3 +1,4 @@
+// src/main/java/com/climastockmcs/authservice/service/AuthService.java
 package com.climastockmcs.authservice.service;
 
 import com.climastockmcs.authservice.model.Role;
@@ -7,17 +8,15 @@ import com.climastockmcs.authservice.repository.UserRepository;
 import com.climastockmcs.authservice.security.JwtUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.Collections;
+import java.util.regex.Pattern;
 
-
-//Es el servicio que maneja el login y el registro de usuarios.
-//Mientras que las otras clases eran configuraciones (como SecurityConfig, JwtFilter, JwtUtil...),
-//esta es la que pone esas piezas a trabajar juntas.
 @Service
 public class AuthService {
 
@@ -36,25 +35,43 @@ public class AuthService {
     @Autowired
     private JwtUtil jwtUtil;
 
-    //Metdodo login
-    public String login(String username, String password) { //Recibe el nombre de usuario y la contraseña.
-        Authentication authentication = authenticationManager.authenticate( //Llama al AuthenticationManager para autenticar las credenciales.
-                new UsernamePasswordAuthenticationToken(username, password) //Crea un token de autenticación con las credenciales proporcionadas.
+    // Patrón regex para validar el formato del email
+    private static final Pattern EMAIL_PATTERN =
+            Pattern.compile("^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$");
+
+
+    // Método para autenticar a un usuario y generar un token JWT
+    public String login(String username, String password) {
+        User user = userRepository.findByUsername(username)
+                .orElseThrow(() -> new RuntimeException("Usuario no encontrado"));//Si no encuentra al usuario → lanza la excepción RuntimeException.
+
+        // Verifica si la contraseña proporcionada coincide con la almacenada en la base de datos
+        if (!passwordEncoder.matches(password, user.getPassword())) {
+            throw new BadCredentialsException("Contraseña incorrecta");
+        }
+
+        Authentication authentication = authenticationManager.authenticate(
+                new UsernamePasswordAuthenticationToken(username, password)
         );
 
+        // Si la autenticación es exitosa, genera y devuelve un token JWT
         if (authentication.isAuthenticated()) {
             return jwtUtil.generateToken((org.springframework.security.core.userdetails.User) authentication.getPrincipal());
-            //Si todo va bien → genera el JWT con jwtUtil.generateToken().
         } else {
             throw new RuntimeException("Credenciales inválidas");
-            //Si no va bien → lanza un errorr
         }
     }
 
-    //Método register
+    // Método para registrar un nuevo usuario
     public User register(String username, String password, String email) {
         if (userRepository.findByUsername(username).isPresent()) {
             throw new RuntimeException("El usuario ya existe");
+        }
+        if (password == null || password.length() < 8) {
+            throw new RuntimeException("La contraseña debe tener al menos 8 caracteres");
+        }
+        if (email == null || !EMAIL_PATTERN.matcher(email).matches()) {
+            throw new RuntimeException("Email inválido");
         }
         Role userRole = rolRepository.findByName("ROLE_USER")
                 .orElseGet(() -> rolRepository.save(new Role(null, "ROLE_USER")));
@@ -65,5 +82,4 @@ public class AuthService {
         user.setRoles(Collections.singleton(userRole));
         return userRepository.save(user);
     }
-
 }

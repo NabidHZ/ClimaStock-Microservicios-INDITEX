@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3782d82-53ad-4f84-b5cb-d22aae18f197" name="Changes" comment="flujo visual añadido">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="a3782d82-53ad-4f84-b5cb-d22aae18f197" name="Changes" comment="AUTHservice funcionando">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/climastockmcs/authservice/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/climastockmcs/authservice/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/climastockmcs/authservice/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/climastockmcs/authservice/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/climastockmcs/authservice/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/climastockmcs/authservice/service/AuthService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +117,7 @@
       <workItem from="1759772987943" duration="690000" />
       <workItem from="1759939701228" duration="9328000" />
       <workItem from="1760015614535" duration="10060000" />
-      <workItem from="1760039339041" duration="3563000" />
+      <workItem from="1760039339041" duration="5239000" />
     </task>
     <task id="LOCAL-00001" summary="platilla auth-service">
       <option name="closed" value="true" />
@@ -202,7 +199,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760025526143</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="AUTHservice funcionando">
+      <option name="closed" value="true" />
+      <created>1760042972470</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1760042972470</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,6 +223,7 @@
     <MESSAGE value="Jwt filtros" />
     <MESSAGE value="Microservicio corriendo" />
     <MESSAGE value="flujo visual añadido" />
-    <option name="LAST_COMMIT_MESSAGE" value="flujo visual añadido" />
+    <MESSAGE value="AUTHservice funcionando" />
+    <option name="LAST_COMMIT_MESSAGE" value="AUTHservice funcionando" />
   </component>
 </project>

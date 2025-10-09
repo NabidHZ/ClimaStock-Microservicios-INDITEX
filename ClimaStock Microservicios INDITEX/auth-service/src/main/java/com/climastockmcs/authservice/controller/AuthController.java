@@ -27,4 +27,11 @@ public class AuthController {
         String token = authService.login(request.getUsername(), request.getPassword());
         return ResponseEntity.ok(new AuthResponse(token));
     }
+
+    //Está manejando las excepciones que he creado en AuthService
+    @ExceptionHandler(RuntimeException.class)
+    public ResponseEntity<String> handleRuntimeException(RuntimeException ex) {
+        return ResponseEntity.badRequest().body(ex.getMessage());
+    }
+
 }
