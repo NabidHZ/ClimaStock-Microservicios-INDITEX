@@ -44,7 +44,8 @@ public class SecurityConfig {
         http
                 .csrf(csrf -> csrf.disable()) //Desactiva la protección CSRF porque ya uso JWT
                 .authorizeHttpRequests(auth -> auth //Define qué rutas necesitan autenticación y cuáles no.
-                        .requestMatchers("/auth/**").permitAll() //Permite acceso sin autenticación a rutas que empiezan con /auth/
+                        .requestMatchers("/auth/register", "/auth/login").permitAll() // 🔹 Endpoints públicos
+                        //Permite acceso sin autenticación a rutas que empiezan con /auth/
                         .anyRequest().authenticated() //Cualquier otra ruta requiere autenticación
                 )
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS));
