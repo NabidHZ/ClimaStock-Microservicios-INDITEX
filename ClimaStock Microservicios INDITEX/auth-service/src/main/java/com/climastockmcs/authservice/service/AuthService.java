@@ -75,6 +75,8 @@ public class AuthService {
         }
         Role userRole = rolRepository.findByName("ROLE_USER")
                 .orElseGet(() -> rolRepository.save(new Role(null, "ROLE_USER")));
+        Role adminRole = rolRepository.findByName("ROLE_ADMIN")
+                .orElseGet(() -> rolRepository.save(new Role(null, "ROLE_ADMIN")));
         User user = new User();
         user.setUsername(username);
         user.setPassword(passwordEncoder.encode(password));

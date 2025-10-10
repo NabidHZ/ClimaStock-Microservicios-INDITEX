@@ -5,6 +5,7 @@ import com.climastockmcs.authservice.service.UserDetailsServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -45,7 +46,8 @@ public class SecurityConfig {
                 .csrf(csrf -> csrf.disable()) //Desactiva la protección CSRF porque ya uso JWT
                 .authorizeHttpRequests(auth -> auth //Define qué rutas necesitan autenticación y cuáles no.
                         .requestMatchers("/auth/register", "/auth/login").permitAll() // 🔹 Endpoints públicos
-                        //Permite acceso sin autenticación a rutas que empiezan con /auth/
+                        .requestMatchers(HttpMethod.GET, "/api/**").hasAnyRole("USER", "ADMIN") // Solo lectura para USER y ADMIN
+                        .requestMatchers("/api/**").hasRole("ADMIN") // Crear, editar, eliminar solo ADMIN
                         .anyRequest().authenticated() //Cualquier otra ruta requiere autenticación
                 )
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS));
