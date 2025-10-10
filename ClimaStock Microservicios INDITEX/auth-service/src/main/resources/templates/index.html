@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Página Principal</title>
+  <link rel="stylesheet" th:href="@{/css/style.css}" />
+</head>
+<body>
+<h1>Bienvenido a AuthService</h1>
+<p>Por favor, selecciona una opción:</p>
+<div>
+  <a th:href="@{/login}" class="link-dashboard">Iniciar Sesión</a>
+  <a th:href="@{/register}" class="link-dashboard">Registrarse</a>
+</div>
+</body>
+</html>
