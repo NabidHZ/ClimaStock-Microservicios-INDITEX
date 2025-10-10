@@ -15,5 +15,9 @@ public class PageController {
     public String registerPage() {
         return "register";
     }
-}
 
+    @GetMapping("/")
+    public String indexPage() {
+        return "index";
+    }
+}

@@ -45,7 +45,7 @@ public class SecurityConfig {
         http
                 .csrf(csrf -> csrf.disable()) //Desactiva la protección CSRF porque ya uso JWT
                 .authorizeHttpRequests(auth -> auth //Define qué rutas necesitan autenticación y cuáles no.
-                        .requestMatchers("/auth/register", "/auth/login", "/login", "/register").permitAll() // 🔹 Endpoints públicos y páginas HTML
+                        .requestMatchers("/", "/auth/register", "/auth/login", "/login", "/register").permitAll() // 🔹 Endpoints públicos y páginas HTML
                         .requestMatchers(HttpMethod.GET, "/api/**").hasAnyRole("USER", "ADMIN") // Solo lectura para USER y ADMIN
                         .requestMatchers("/api/**").hasRole("ADMIN") // Crear, editar, eliminar solo ADMIN
                         .anyRequest().authenticated() //Cualquier otra ruta requiere autenticación
