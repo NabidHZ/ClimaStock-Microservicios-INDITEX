@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3782d82-53ad-4f84-b5cb-d22aae18f197" name="Changes" comment="fronted creado">
+    <list default="true" id="a3782d82-53ad-4f84-b5cb-d22aae18f197" name="Changes" comment="fronted funcioanndo">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/climastockmcs/authservice/config/DataInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/climastockmcs/authservice/config/DataInitializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/climastockmcs/authservice/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/climastockmcs/authservice/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/climastockmcs/authservice/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/climastockmcs/authservice/controller/AuthController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/climastockmcs/authservice/controller/PageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/climastockmcs/authservice/controller/PageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/climastockmcs/authservice/security/JwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/climastockmcs/authservice/security/JwtFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/climastockmcs/authservice/security/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/climastockmcs/authservice/security/JwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/climastockmcs/authservice/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/climastockmcs/authservice/service/AuthService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,31 +61,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "Spring Boot.AuthServiceApplication (1).executor": "Run",
-    "Spring Boot.AuthServiceApplication .executor": "Run",
-    "Spring Boot.AuthServiceApplication.executor": "Run",
-    "Spring Boot.ClimaStockMicroserviciosInditexApplication.executor": "Run",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.general",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Spring Boot.AuthServiceApplication (1).executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.AuthServiceApplication .executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.AuthServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ClimaStockMicroserviciosInditexApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="ClimaStock Microservicios INDITEX" />
@@ -119,7 +125,9 @@
       <workItem from="1759939701228" duration="9328000" />
       <workItem from="1760015614535" duration="10060000" />
       <workItem from="1760039339041" duration="5239000" />
-      <workItem from="1760112056261" duration="9338000" />
+      <workItem from="1760112056261" duration="9521000" />
+      <workItem from="1760174993297" duration="3074000" />
+      <workItem from="1760178558300" duration="2132000" />
     </task>
     <task id="LOCAL-00001" summary="platilla auth-service">
       <option name="closed" value="true" />
@@ -225,7 +233,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760125326720</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="fronted funcioanndo">
+      <option name="closed" value="true" />
+      <created>1760125565000</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1760125565000</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,6 +260,7 @@
     <MESSAGE value="AUTHservice funcionando" />
     <MESSAGE value="roles creados" />
     <MESSAGE value="fronted creado" />
-    <option name="LAST_COMMIT_MESSAGE" value="fronted creado" />
+    <MESSAGE value="fronted funcioanndo" />
+    <option name="LAST_COMMIT_MESSAGE" value="fronted funcioanndo" />
   </component>
 </project>

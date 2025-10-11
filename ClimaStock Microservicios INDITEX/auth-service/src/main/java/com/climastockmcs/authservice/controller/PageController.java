@@ -20,4 +20,9 @@ public class PageController {
     public String indexPage() {
         return "index";
     }
+
+    @GetMapping("/register-admin")
+    public String registerAdminPage() {
+        return "register-admin";
+    }
 }

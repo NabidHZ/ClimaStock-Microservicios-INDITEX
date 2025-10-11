@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
+import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.http.SessionCreationPolicy;
@@ -18,6 +19,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 
 @Configuration //Indica que esta clase contiene configuraciones de Spring
 @EnableWebSecurity //Habilita la seguridad web en la aplicación
+@EnableMethodSecurity(prePostEnabled = true) //
 public class SecurityConfig {
 
     @Autowired //Inyección de dependencia del filtro JWT
@@ -45,7 +47,7 @@ public class SecurityConfig {
         http
                 .csrf(csrf -> csrf.disable()) //Desactiva la protección CSRF porque ya uso JWT
                 .authorizeHttpRequests(auth -> auth //Define qué rutas necesitan autenticación y cuáles no.
-                        .requestMatchers("/", "/auth/register", "/auth/login", "/login", "/register").permitAll() // 🔹 Endpoints públicos y páginas HTML
+                        .requestMatchers("/", "/auth/register", "/auth/login", "/login", "/register", "/register-admin", "/auth/register-admin").permitAll() // 🔹 Endpoints públicos y páginas HTML
                         .requestMatchers(HttpMethod.GET, "/api/**").hasAnyRole("USER", "ADMIN") // Solo lectura para USER y ADMIN
                         .requestMatchers("/api/**").hasRole("ADMIN") // Crear, editar, eliminar solo ADMIN
                         .anyRequest().authenticated() //Cualquier otra ruta requiere autenticación

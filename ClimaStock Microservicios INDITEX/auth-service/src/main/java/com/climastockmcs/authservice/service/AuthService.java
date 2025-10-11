@@ -84,4 +84,25 @@ public class AuthService {
         user.setRoles(Collections.singleton(userRole));
         return userRepository.save(user);
     }
+
+    // Método para registrar un nuevo usuario admin
+    public User registerAdmin(String username, String password, String email) {
+        if (userRepository.findByUsername(username).isPresent()) {
+            throw new RuntimeException("El usuario ya existe");
+        }
+        if (password == null || password.length() < 8) {
+            throw new RuntimeException("La contraseña debe tener al menos 8 caracteres");
+        }
+        if (email == null || !EMAIL_PATTERN.matcher(email).matches()) {
+            throw new RuntimeException("Email inválido");
+        }
+        Role adminRole = rolRepository.findByName("ROLE_ADMIN")
+                .orElseGet(() -> rolRepository.save(new Role(null, "ROLE_ADMIN")));
+        User user = new User();
+        user.setUsername(username);
+        user.setPassword(passwordEncoder.encode(password));
+        user.setEmail(email);
+        user.setRoles(Collections.singleton(adminRole));
+        return userRepository.save(user);
+    }
 }

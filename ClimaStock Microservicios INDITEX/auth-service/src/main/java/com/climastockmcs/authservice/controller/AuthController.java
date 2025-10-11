@@ -28,6 +28,12 @@ public class AuthController {
         return ResponseEntity.ok(new AuthResponse(token));
     }
 
+    @PostMapping("/register-admin")
+    public ResponseEntity<User> registerAdmin(@RequestBody AuthRequest request) {
+        User user = authService.registerAdmin(request.getUsername(), request.getPassword(), request.getEmail());
+        return ResponseEntity.ok(user);
+    }
+
     //Está manejando las excepciones que he creado en AuthService
     @ExceptionHandler(RuntimeException.class)
     public ResponseEntity<String> handleRuntimeException(RuntimeException ex) {

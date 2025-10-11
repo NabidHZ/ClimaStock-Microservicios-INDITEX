@@ -54,12 +54,18 @@ public class JwtUtil {
 
     //Este método es genérico y puede extraer cualquier dato del token.
     public <T> T extractClaim(String token, Function<Claims, T> claimsResolver) {
+        if (token == null || token.trim().isEmpty()) {
+            return null;
+        }
         final Claims claims = extractAllClaims(token);
-        return claimsResolver.apply(claims);
+        return claims != null ? claimsResolver.apply(claims) : null;
     }
 
     //Este método extrae todos los datos (claims) del token.
     private Claims extractAllClaims(String token) {
+        if (token == null || token.trim().isEmpty()) {
+            return null;
+        }
         return Jwts.parser().setSigningKey(secret.getBytes()).parseClaimsJws(token).getBody();
     }
 
@@ -75,4 +81,3 @@ public class JwtUtil {
         return (username.equals(userDetails.getUsername()) && !isTokenExpired(token));
     }
 }
-

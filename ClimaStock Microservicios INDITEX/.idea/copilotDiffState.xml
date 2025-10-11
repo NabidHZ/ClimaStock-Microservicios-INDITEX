@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/auth-service/src/main/java/com/climastockmcs/authservice/controller/PageController.java">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/auth-service/src/main/java/com/climastockmcs/authservice/controller/PageController.java" />
+              <option name="originalContent" value="package com.climastockmcs.authservice.controller;&#10;&#10;import org.springframework.stereotype.Controller;&#10;import org.springframework.web.bind.annotation.GetMapping;&#10;&#10;@Controller&#10;public class PageController {&#10;&#10;    @GetMapping(&quot;/login&quot;)&#10;    public String loginPage() {&#10;        return &quot;login&quot;;&#10;    }&#10;&#10;    @GetMapping(&quot;/register&quot;)&#10;    public String registerPage() {&#10;        return &quot;register&quot;;&#10;    }&#10;&#10;    @GetMapping(&quot;/&quot;)&#10;    public String indexPage() {&#10;        return &quot;index&quot;;&#10;    }&#10;}&#10;" />
+              <option name="updatedContent" value="package com.climastockmcs.authservice.controller;&#10;&#10;import org.springframework.stereotype.Controller;&#10;import org.springframework.web.bind.annotation.GetMapping;&#10;&#10;@Controller&#10;public class PageController {&#10;&#10;    @GetMapping(&quot;/login&quot;)&#10;    public String loginPage() {&#10;        return &quot;login&quot;;&#10;    }&#10;&#10;    @GetMapping(&quot;/register&quot;)&#10;    public String registerPage() {&#10;        return &quot;register&quot;;&#10;    }&#10;&#10;    @GetMapping(&quot;/&quot;)&#10;    public String indexPage() {&#10;        return &quot;index&quot;;&#10;    }&#10;&#10;    @GetMapping(&quot;/register-admin&quot;)&#10;    public String registerAdminPage() {&#10;        return &quot;register-admin&quot;;&#10;    }&#10;}" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
