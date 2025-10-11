@@ -1,0 +1,20 @@
+server:
+  port: 8090
+
+store-service:
+  base-url: http://localhost:8082   # cambia al host/puerto donde esté tu StoreService
+
+open-meteo:
+  base-url: https://api.open-meteo.com/v1/forecast
+  timezone: auto
+  days: 1
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+
+# Cache (Caffeine) - parámetros de ejemplo
+cache:
+  weather:
+    expire-minutes: 15
+    maximum-size: 1000

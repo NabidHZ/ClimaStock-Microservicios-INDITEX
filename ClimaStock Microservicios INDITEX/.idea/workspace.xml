@@ -79,7 +79,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.AuthServiceApplication ">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="ClimaStock Microservicios INDITEX" />
       <method v="2">
@@ -90,6 +90,13 @@
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="auth-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.climastockmcs.authservice.AuthServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WeatherserviceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="weatherservice" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.climastockmcs.weatherservice.WeatherserviceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -121,6 +128,7 @@
       <workItem from="1760112056261" duration="9521000" />
       <workItem from="1760174993297" duration="3074000" />
       <workItem from="1760178558300" duration="3410000" />
+      <workItem from="1760182718351" duration="2688000" />
     </task>
     <task id="LOCAL-00001" summary="platilla auth-service">
       <option name="closed" value="true" />
@@ -242,7 +250,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760180755943</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Roles Admin funcionando correctamente">
+      <option name="closed" value="true" />
+      <created>1760182929746</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1760182929746</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

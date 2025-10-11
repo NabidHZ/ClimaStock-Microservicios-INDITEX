@@ -3,7 +3,7 @@
   <component name="CompilerConfiguration">
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
-      <profile name="Annotation profile for auth-service" enabled="true">
+      <profile name="Annotation profile for weatherservice" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -12,6 +12,7 @@
         </processorPath>
         <module name="auth-service" />
         <module name="ClimaStockMicroservicios" />
+        <module name="weatherservice" />
       </profile>
     </annotationProcessing>
   </component>
@@ -19,6 +20,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="ClimaStockMicroservicios" options="-parameters" />
       <module name="auth-service" options="-parameters" />
+      <module name="weatherservice" options="-parameters" />
     </option>
   </component>
 </project>
