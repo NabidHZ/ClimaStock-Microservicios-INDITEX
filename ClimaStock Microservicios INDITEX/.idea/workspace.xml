@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3782d82-53ad-4f84-b5cb-d22aae18f197" name="Changes" comment="fronted funcioanndo">
+    <list default="true" id="a3782d82-53ad-4f84-b5cb-d22aae18f197" name="Changes" comment="Roles Admin funcionando correctamente">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/climastockmcs/authservice/config/DataInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/climastockmcs/authservice/config/DataInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/climastockmcs/authservice/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/climastockmcs/authservice/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/climastockmcs/authservice/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/climastockmcs/authservice/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/climastockmcs/authservice/controller/PageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/climastockmcs/authservice/controller/PageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/climastockmcs/authservice/security/JwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/climastockmcs/authservice/security/JwtFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/climastockmcs/authservice/security/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/climastockmcs/authservice/security/JwtUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/climastockmcs/authservice/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/climastockmcs/authservice/service/AuthService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +120,7 @@
       <workItem from="1760039339041" duration="5239000" />
       <workItem from="1760112056261" duration="9521000" />
       <workItem from="1760174993297" duration="3074000" />
-      <workItem from="1760178558300" duration="2132000" />
+      <workItem from="1760178558300" duration="3410000" />
     </task>
     <task id="LOCAL-00001" summary="platilla auth-service">
       <option name="closed" value="true" />
@@ -241,7 +234,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760125565000</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Roles Admin funcionando correctamente">
+      <option name="closed" value="true" />
+      <created>1760180755943</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1760180755943</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,6 +262,7 @@
     <MESSAGE value="roles creados" />
     <MESSAGE value="fronted creado" />
     <MESSAGE value="fronted funcioanndo" />
-    <option name="LAST_COMMIT_MESSAGE" value="fronted funcioanndo" />
+    <MESSAGE value="Roles Admin funcionando correctamente" />
+    <option name="LAST_COMMIT_MESSAGE" value="Roles Admin funcionando correctamente" />
   </component>
 </project>
