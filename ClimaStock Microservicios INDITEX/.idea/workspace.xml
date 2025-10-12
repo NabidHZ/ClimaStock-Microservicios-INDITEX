@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3782d82-53ad-4f84-b5cb-d22aae18f197" name="Changes" comment="Roles Admin funcionando correctamente">
+    <list default="true" id="a3782d82-53ad-4f84-b5cb-d22aae18f197" name="Changes" comment="Weather service creado">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weatherservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/weatherservice/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weatherservice/src/main/java/com/climastockmcs/weatherservice/client/WebClientConfig.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +130,7 @@
       <workItem from="1760178558300" duration="3410000" />
       <workItem from="1760182718351" duration="2688000" />
       <workItem from="1760264654518" duration="1620000" />
-      <workItem from="1760268522732" duration="3881000" />
+      <workItem from="1760268522732" duration="7018000" />
     </task>
     <task id="LOCAL-00001" summary="platilla auth-service">
       <option name="closed" value="true" />
@@ -262,7 +260,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760182929746</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Weather service creado">
+      <option name="closed" value="true" />
+      <created>1760280081019</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1760280081019</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,6 +289,7 @@
     <MESSAGE value="fronted creado" />
     <MESSAGE value="fronted funcioanndo" />
     <MESSAGE value="Roles Admin funcionando correctamente" />
-    <option name="LAST_COMMIT_MESSAGE" value="Roles Admin funcionando correctamente" />
+    <MESSAGE value="Weather service creado" />
+    <option name="LAST_COMMIT_MESSAGE" value="Weather service creado" />
   </component>
 </project>
