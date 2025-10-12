@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a3782d82-53ad-4f84-b5cb-d22aae18f197" name="Changes" comment="Roles Admin funcionando correctamente">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weatherservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/weatherservice/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weatherservice/src/main/java/com/climastockmcs/weatherservice/client/WebClientConfig.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +18,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -129,6 +131,8 @@
       <workItem from="1760174993297" duration="3074000" />
       <workItem from="1760178558300" duration="3410000" />
       <workItem from="1760182718351" duration="2688000" />
+      <workItem from="1760264654518" duration="1620000" />
+      <workItem from="1760268522732" duration="3881000" />
     </task>
     <task id="LOCAL-00001" summary="platilla auth-service">
       <option name="closed" value="true" />
