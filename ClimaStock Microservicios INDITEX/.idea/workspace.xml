@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3782d82-53ad-4f84-b5cb-d22aae18f197" name="Changes" comment="Weather service creado">
+    <list default="true" id="a3782d82-53ad-4f84-b5cb-d22aae18f197" name="Changes" comment="DTO creados">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/climastockmcs/authservice/controller/PageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/climastockmcs/authservice/controller/PageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weatherservice/src/main/java/com/climastockmcs/weatherservice/service/WeatherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/weatherservice/src/main/java/com/climastockmcs/weatherservice/service/WeatherService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +132,7 @@
       <workItem from="1760178558300" duration="3410000" />
       <workItem from="1760182718351" duration="2688000" />
       <workItem from="1760264654518" duration="1620000" />
-      <workItem from="1760268522732" duration="7018000" />
+      <workItem from="1760268522732" duration="20109000" />
     </task>
     <task id="LOCAL-00001" summary="platilla auth-service">
       <option name="closed" value="true" />
@@ -268,7 +270,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760280081019</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="DTO creados">
+      <option name="closed" value="true" />
+      <created>1760282396179</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1760282396179</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,6 +300,7 @@
     <MESSAGE value="fronted funcioanndo" />
     <MESSAGE value="Roles Admin funcionando correctamente" />
     <MESSAGE value="Weather service creado" />
-    <option name="LAST_COMMIT_MESSAGE" value="Weather service creado" />
+    <MESSAGE value="DTO creados" />
+    <option name="LAST_COMMIT_MESSAGE" value="DTO creados" />
   </component>
 </project>
