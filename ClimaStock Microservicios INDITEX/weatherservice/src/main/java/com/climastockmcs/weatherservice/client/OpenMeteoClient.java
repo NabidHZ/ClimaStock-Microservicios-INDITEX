@@ -3,10 +3,8 @@ package com.climastockmcs.weatherservice.client;
 
 import com.climastockmcs.weatherservice.dto.OpenMeteoResponse;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.client.WebClient;
 
-@Component
 public class OpenMeteoClient {
 
     private final WebClient webClient;
@@ -37,4 +35,3 @@ public class OpenMeteoClient {
                 .block();//block() espera a que llegue la respuesta de forma síncrona
     }
 }
-

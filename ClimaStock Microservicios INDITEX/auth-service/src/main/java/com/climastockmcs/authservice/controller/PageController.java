@@ -25,3 +25,4 @@ public class PageController {
     public String registerAdminPage() {
         return "register-admin";
     }
+}

@@ -1,6 +1,8 @@
 package com.climastockmcs.weatherservice.config;
 
 
+import com.climastockmcs.weatherservice.client.OpenMeteoClient;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -23,10 +25,17 @@ public class WebClientConfig {
         return WebClient.builder();
     }
 
-    @Bean("openMeteoClient")
-    public WebClient openMeteoClient(WebClient.Builder builder) { // Spring te pasa el builder que defini arriba
+    @Bean("openMeteoWebClient")
+    public WebClient openMeteoWebClient(WebClient.Builder builder) { // Spring te pasa el builder que defini arriba
         // (lo inyecta automáticamente porque también es un Bean
 
         return builder.baseUrl(openMeteoBaseUrl).build();//Configura el WebClient con la URL base de Open-Meteo y lo construye.
+    }
+
+    @Bean
+    public OpenMeteoClient openMeteoClient(@Qualifier("openMeteoWebClient") WebClient openMeteoWebClient,
+                                           @Value("${open-meteo.timezone:auto}") String timezone,
+                                           @Value("${open-meteo.days:1}") int days) {
+        return new OpenMeteoClient(openMeteoWebClient, timezone, days);
     }
 }

@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3782d82-53ad-4f84-b5cb-d22aae18f197" name="Changes" comment="DTO creados">
+      <change beforePath="$PROJECT_DIR$/.idea/copilotDiffState.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/climastockmcs/authservice/controller/PageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/climastockmcs/authservice/controller/PageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weatherservice/src/main/java/com/climastockmcs/weatherservice/client/OpenMeteoClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/weatherservice/src/main/java/com/climastockmcs/weatherservice/client/OpenMeteoClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weatherservice/src/main/java/com/climastockmcs/weatherservice/config/WebClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/weatherservice/src/main/java/com/climastockmcs/weatherservice/config/WebClientConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weatherservice/src/main/java/com/climastockmcs/weatherservice/service/WeatherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/weatherservice/src/main/java/com/climastockmcs/weatherservice/service/WeatherService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +27,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="52c49fbba4707c3255aadd22147cef86a536c664" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -56,31 +64,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;Spring Boot.AuthServiceApplication (1).executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.AuthServiceApplication .executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.AuthServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ClimaStockMicroserviciosInditexApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.AuthServiceApplication (1).executor": "Run",
+    "Spring Boot.AuthServiceApplication .executor": "Run",
+    "Spring Boot.AuthServiceApplication.executor": "Run",
+    "Spring Boot.ClimaStockMicroserviciosInditexApplication.executor": "Run",
+    "Spring Boot.WeatherserviceApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvnw.cmd clean package" />
+    </option>
+  </component>
   <component name="RunManager" selected="Spring Boot.AuthServiceApplication ">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="ClimaStock Microservicios INDITEX" />
@@ -133,6 +148,7 @@
       <workItem from="1760182718351" duration="2688000" />
       <workItem from="1760264654518" duration="1620000" />
       <workItem from="1760268522732" duration="20109000" />
+      <workItem from="1760363208647" duration="2105000" />
     </task>
     <task id="LOCAL-00001" summary="platilla auth-service">
       <option name="closed" value="true" />
@@ -283,6 +299,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="platilla auth-service" />
